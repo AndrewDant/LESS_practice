@@ -51,6 +51,13 @@ header {
 		aside {
 			.right;
 			.column(6);
+			
+			img {
+				.bordered(@template-color, @template-color,
+					@template-color, @template-color);
+				.border-radius(50%);
+				.drop-shadow(10px, 10px, 15px, 0.5);
+			}
 		}
 
 		article {
