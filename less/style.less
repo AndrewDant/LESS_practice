@@ -62,12 +62,23 @@ header {
 
 
 footer {
-    
+	background: lighten(@template-color, 95%);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: @padding+10 0;
+	color: @dark;
+
 	.container {
-	.push(2);
+		.container-layout;
+		.push(2);
 
 		ul {
 			.column(3);
+			list-style-type: none;
+			font-size: @fontSize*1.5;
 		}
 	}
+
+	.clearfix();
 }
