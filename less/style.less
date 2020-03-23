@@ -16,9 +16,10 @@ body {
 header {
 	padding: @padding+30 0 0 @padding+10;
 	color: @template-color;
+	background: lighten(@template-color, 25%);
 
 	.container {
-    
+    .container-layout;
 		h1 {
 			.column(6);
 		}
@@ -45,8 +46,12 @@ header {
 
 
 #main {
-	
+	padding: @padding+30 0;
+	color: @dark;
+	.gradient(lighten(@template-color, 40%), @light, @template-color);
+
 	.container {
+		.container-layout;
 
 		aside {
 			.right;
